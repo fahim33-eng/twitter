@@ -9,7 +9,7 @@ export default async function page() {
       <div>
         {providers && Object.values(providers).map((provider) => (
           <div key="1">
-            <button onClick={() => signIn(provider.id, {callbackUrl : "/"})} className="px-4 py-2 bg-blue-500 text-white font-bold rounded-lg shadow-md hover:bg-blue-700">Sign in Using {provider.name}</button>
+            <button onClick={() => signIn(provider.id, {callbackUrl : "/"})} className="px-4 py-2 bg-blue-500 text-white font-bold rounded-lg shadow-md hover:bg-blue-700">Sign in Using Google</button>
           </div>
         ))}
       </div>
